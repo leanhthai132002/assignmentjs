@@ -2,36 +2,118 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Assigment ECMA</title>
-  <link rel="stylesheet" href="./style.css">
+
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
-  <div class="max-w-5xl mx-auto">
-    <header>
-      <div class="bg-blue-800 py-4">
-        <a href="">
-          <img src="https://picsum.photos/150/40" alt="" class="mx-auto">
-        </a>
-      </div>
-      <div class="bg-orange-500">
-        <ul class="flex">
-          <li><a href="/" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">Home </a></li>
-          <li><a href="/about" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">About</a></li>
-          <li><a href="/product" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">Product</a></li>
-          <li><a href="/contact" class="block px-4 py-3 hover:bg-indigo-500 hover:text-white">Contact</a></li>
-        </ul>
-      </div>
-    </header>
-    <div id="app"></div>
-    <footer class="bg-blue-800 text-center py-4 mt-4">
-      <p class="m-0 text-white">Copyright by Datlt</p>
-    </footer>
-  </div>
-  <script type="module" src="./src/main.js"></script>
+    <div class="max-w-[61rem] m-auto">
+        <header>
+            <div class="header_top bg-[#272f54] py-[13px]">
+                <a href=""><img src="./img/logo.png" alt="" class="m-auto"></a>
+            </div>
+            <div class="header-main flex  bg-[#ca7802]">
+                <nav class="menu-item">
+                    <ul class="flex ml-2">
+                        <li class="mx-[15px] my-[10px] text-white "><a href="" class="hover:border-b-[1px] border-white">Trang chủ</a></li>
+                        <li class="mx-[15px] my-[10px] text-white "><a href="" class="hover:border-b-[1px] border-white">Tuyển sinh</a></li>
+                        <li class="mx-[15px] my-[10px] text-white "><a href="" class="hover:border-b-[1px] border-white">Trương trình đào tạo</a></li>
+                        <li class="mx-[15px] my-[10px] text-white "><a href="" class="hover:border-b-[1px] border-white">Góc sinh viên</a></li>
+                        <li class="mx-[15px] my-[10px] text-white "><a href="" class="hover:border-b-[1px] border-white">Tuyển dụng</a></li>
+                    </ul>
+                </nav>
+                <div class="search m-auto">
+                    <form action="">
+                        <input type="text" class="px-[10px] rounded-[1px]">
+                        <input type="submit" value="Tìm kiếm" class="bg-[#252f4f] ml-[10px] px-[15px] py-[2px] text-white text-[14px] ">
+                    </form>
+                </div>
+            </div>
+        </header>
+        <div class="banner mt-[10px]">
+            <a href=""><img src="/img/banner.jpg" alt=""></a>
+        </div>
+        <div class="content">
+            <div>
+                <h2>
+                    <h2 class="my-[20px] text-2xl font-medium text-[#272f54]">Tin tức học tập</h2>
+                </h2>
+                <div class="grid grid-cols-3 gap-4" id="products">
+                    <div class="border border-red-200 px-[20px] py-[15px] mx-auto">
+                        <a href=""><img src="img/img1.jpg" alt="" class="m-auto"></a>
+                        <div class="ml-[9px]">
+                            <a href="">
+                                <p class="font-medium my-[10px] text-[#ca7802] text-[17px]">Sinh viên khối ngành kinh tế cách chạm vòa cảm xúc</p>
+                            </a>
+                            <p class="text-[15px] font-normal">Tối ngày 16/6/2018 cao đẳng FPT Folytechnic Hà Nội Đã tổ chức lễ vinh danh 'Ong vàng FPL' tuyển dụng 296 nhân tập thể có thành tích</p>
+                        </div>
+                    </div>
+<div class="border border-red-200 px-[20px] py-[15px]">
+                        <a href=""><img src="img/img2.jpg" alt="" class="m-auto"></a>
+                        <div class="ml-[9px]">
+                            <a href="">
+                                <p class="font-medium my-[10px] text-[#ca7802] text-[17px]">Sinh viên khối ngành kinh tế cách chạm vòa cảm xúc</p>
+                            </a>
+                            <p class="text-[15px] font-normal">Tối ngày 16/6/2018 cao đẳng FPT Folytechnic Hà Nội Đã tổ chức lễ vinh danh 'Ong vàng FPL' tuyển dụng 296 nhân tập thể có thành tích</p>
+                        </div>
+                    </div>
+                    <div class="border border-red-200 px-[20px] py-[15px]">
+                        <a href=""><img src="img/img3.jpg" alt="" class="m-auto"></a>
+                        <div class="ml-[9px]">
+                            <a href="">
+                                <p class="font-medium my-[10px] text-[#ca7802] text-[17px]">Sinh viên khối ngành kinh tế cách chạm vòa cảm xúc</p>
+                            </a>
+                            <p class="text-[15px] font-normal">Tối ngày 16/6/2018 cao đẳng FPT Folytechnic Hà Nội Đã tổ chức lễ vinh danh 'Ong vàng FPL' tuyển dụng 296 nhân tập thể có thành tích</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h2>
+                    <h2 class="my-[20px] text-2xl font-medium text-[#272f54]">Hoạt Động Ngoại Khóa</h2>
+                </h2>
+                <div class="grid grid-cols-3 gap-4" id="products">
+                    <div class="border border-red-200 px-[20px] py-[15px]">
+                        <a href=""><img src="img/img1.jpg" alt="" class="m-auto"></a>
+                        <div class="ml-[9px]">
+                            <a href="">
+                                <p class="font-medium my-[10px] text-[#ca7802] text-[17px]">Sinh viên khối ngành kinh tế cách chạm vòa cảm xúc</p>
+                            </a>
+                            <p class="text-[15px] font-normal">Tối ngày 16/6/2018 cao đẳng FPT Folytechnic Hà Nội Đã tổ chức lễ vinh danh 'Ong vàng FPL' tuyển dụng 296 nhân tập thể có thành tích</p>
+                        </div>
+                    </div>
+                    <div class="border border-red-200 px-[20px] py-[15px]">
+                        <a href=""><img src="img/img2.jpg" alt="" class="m-auto"></a>
+                        <div class="ml-[9px]">
+                            <a href="">
+                                <p class="font-medium my-[10px] text-[#ca7802] text-[17px]">Sinh viên khối ngành kinh tế cách chạm vòa cảm xúc</p>
+                            </a>
+<p class="text-[15px] font-normal">Tối ngày 16/6/2018 cao đẳng FPT Folytechnic Hà Nội Đã tổ chức lễ vinh danh 'Ong vàng FPL' tuyển dụng 296 nhân tập thể có thành tích</p>
+                        </div>
+                    </div>
+                    <div class="border border-red-200 px-[20px] py-[15px]">
+                        <a href=""><img src="img/img3.jpg" alt="" class="m-auto"></a>
+                        <div class="ml-[9px]">
+                            <a href="">
+                                <p class="font-medium my-[10px] text-[#ca7802] text-[17px]">Sinh viên khối ngành kinh tế cách chạm vòa cảm xúc</p>
+                            </a>
+                            <p class="text-[15px] font-normal">Tối ngày 16/6/2018 cao đẳng FPT Folytechnic Hà Nội Đã tổ chức lễ vinh danh 'Ong vàng FPL' tuyển dụng 296 nhân tập thể có thành tích</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="bg-[#272f54] py-[13px] mt-[10px]">
+            <p class="text-center text-white">Tên Sinh viên</p>
+        </footer>
+    </div>
+    <script type="module" src="./main.js"></script>
 </body>
 
 </html>
+>>>>>>> 5d567ace0da576fa9ca5af0d1cd283d0bbaa6e6a
