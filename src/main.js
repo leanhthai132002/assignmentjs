@@ -5,6 +5,8 @@ import AboutProduct from "./pages/product";
 import DetailNewsPage from "./pages/detail";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import SigninPage from "./pages/signin";
+import SignupPage from "./pages/signup";
 
 const router = new Navigo("/", { linksSelector: "a" });
 
@@ -27,5 +29,12 @@ router.on({
     "/news/:id": (value) => {
         print(DetailNewsPage.render(value.data.id));
     },
+    "/signin": () => {
+        print(SigninPage.render());
+    },
+    "/signup": () => {
+        print(SignupPage.render());
+    },
+
 });
 router.resolve();
